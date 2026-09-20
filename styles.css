@@ -6,6 +6,11 @@
 img{
     width: 200px;
 }
+
+.logo{
+    width: 50px;
+}
+
 h1{
     background-color: blue;
     display: flex;
@@ -63,11 +68,25 @@ button:hover{
 }
 button{
     padding: 0px 15px 0px 15px;
+    border-radius: 25%;
     
 }
 .Ultimate{
-    font-size: larger;
-    border-radius: 25%;
-    color: blueviolet;
+    background-color: #e8e8e8;
+    color: #b30000;
+    border: 1px solid #b30000;
     
+}
+
+.Clasica {
+    background-color: #fff3cd;
+    color: #174ea6;
+    border: 1px solid #d6a900;
+}
+
+/* Universo Midnight */
+.Midnight {
+    background-color: #e8e0f5;
+    color: #4b1979;
+    border: 1px solid #4b1979;
 }

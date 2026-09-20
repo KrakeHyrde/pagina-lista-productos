@@ -2,6 +2,8 @@
  const PRECIO = "12900$";
  const TITULO = "Lista de Comics";
  $heroes = ["El Asombroso Spiderman","Los 4 Fantasticos","Thor","Hulk","Iron Man"];
+ $comicVolume = 1;
+
 ?>
 
 <!DOCTYPE html>
@@ -11,11 +13,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de comics</title>
     <link rel="stylesheet" href="./styles.css">
-    <link rel="data" href="./data.php">
 </head>
 <body>
     <header>
-        <div><img src="" alt="logo"></div>
+        <div><img class="logo" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/1280px-Marvel_Logo.svg.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="logo"></div>
         <div class="UniversosMarvel">
             <button class="Ultimate">Universo Ultimate</button>
             <button class="Clasica">Coleccion Clasica Marvel</button>
@@ -38,7 +39,7 @@
             </tr>
 
             <tr>
-                <td>1</td>
+                <td><?php echo $comicVolume++; ?></td>
                 <td><img src="https://brihet.com.ar/wp-content/uploads/2025/05/MCC01.jpg.webp" alt="comic 1"></td>
                 <td><?php echo $heroes[0] ?></td>
                 <td>¡Poder y responsabilidad!</td>
@@ -46,7 +47,7 @@
                 <td><input type="checkbox" name="" id=""></td>
             </tr>
             <tr>
-                <td>2</td>
+                <td><?php echo $comicVolume++; ?></td>
                 <td><img src="https://brihet.com.ar/wp-content/uploads/2025/05/C-C-MARVEL-02.jpg.webp" alt="comic 2"></td>
                 <td><?php echo $heroes[1] ?></td>
                 <td>Prisioneros del Doctor Destino</td>
@@ -54,7 +55,7 @@
                 <td><input type="checkbox" name="" id=""></td>
             </tr>            
             <tr>
-                <th>3</th>
+                <th><?php echo $comicVolume++; ?></th>
                 <td><img src="https://brihet.com.ar/wp-content/uploads/2025/06/C-C-MARVEL-03.jpg.webp" alt="comic 3"></td>
                 <td><?php echo $heroes[2] ?></td>
                 <td>Será digno el…</td>
@@ -62,7 +63,7 @@
                 <td><input type="checkbox" name="" id=""></td>
             </tr>            
             <tr>
-                <th>4</th>
+                <th><?php echo $comicVolume++; ?></th>
                 <td><img src="https://brihet.com.ar/wp-content/uploads/2025/06/C-C-MARVEL-04.jpg.webp" alt="comic 4"></td>
                 <td><?php echo $heroes[3] ?></td>
                 <td>El hombre o el monstruo</td>
@@ -70,7 +71,7 @@
                 <td><input type="checkbox" name="" id=""></td>
             </tr>            
             <tr>
-                <th>5</th>
+                <th><?php echo $comicVolume++; ?></th>
                 <td><img src="https://brihet.com.ar/wp-content/uploads/2025/06/C-C-MARVEL-05.jpg.webp" alt="comic 5"></td>
                 <td><?php echo $heroes[1] ?></td>
                 <td>El príncipe Submarino</td>
@@ -78,7 +79,7 @@
                 <td><input type="checkbox" name="" id=""></td>
             </tr>            
             <tr>
-                <th>6</th>
+                <th><?php echo $comicVolume++; ?></th>
                 <td><img src="https://brihet.com.ar/wp-content/uploads/2025/07/C-C-MARVEL-06.jpg.webp" alt="comic 6"></td>
                 <td><?php echo $heroes[4] ?></td>
                 <td>El vengador dorado</td>
@@ -86,7 +87,7 @@
                 <td><input type="checkbox" name="" id=""></td>
             </tr>            
             <tr>
-                <th>7</th>
+                <th><?php echo $comicVolume++; ?></th>
                 <td><img src="https://brihet.com.ar/wp-content/uploads/2025/07/C-C-MARVEL-07.jpg.webp" alt="comic 7"></td>
                 <td><?php echo $heroes[1] ?></td>
                 <td>Amenaza en la luna</td>
@@ -94,7 +95,7 @@
                 <td><input type="checkbox" name="" id=""></td>
             </tr>            
             <tr>
-                <th>8</th>
+                <th><?php echo $comicVolume++; ?></th>
                 <td><img src="https://brihet.com.ar/wp-content/uploads/2025/07/C-C-MARVEL-08.jpg.webp" alt="comic 8"></td>
                 <td><?php echo $heroes[2] ?></td>
                 <td>Cuentos de Asgard</td>
@@ -102,7 +103,7 @@
                 <td><input type="checkbox" name="" id=""></td>
             </tr>            
             <tr>
-                <th>9</th>
+                <th><?php echo $comicVolume++; ?></th>
                 <td><img src="https://brihet.com.ar/wp-content/uploads/2025/07/C-C-MARVEL-09.jpg.webp" alt="comic 9"></td>
                 <td><?php echo $heroes[1] ?></td>
                 <td>Un Skrull entre nosotros</td>
@@ -110,7 +111,7 @@
                 <td><input type="checkbox" name="" id=""></td>
             </tr>            
             <tr>
-                <th>10</th>
+                <th><?php echo $comicVolume++; ?></th>
                 <td><img src="https://brihet.com.ar/wp-content/uploads/2025/07/C-C-MARVEL-10.jpg.webp" alt="comic 10"></td>
                 <td><?php echo $heroes[0] ?></td>
                 <td>Todos contra la Araña</td>
