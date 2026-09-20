@@ -1,3 +1,9 @@
+<?php
+ const PRECIO = "12900$";
+ const TITULO = "Lista de Comics";
+ $heroes = ["El Asombroso Spiderman","Los 4 Fantasticos","Thor","Hulk","Iron Man"];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +25,7 @@
             <button>inicio sesion</button>
         </div>
     </header>
-    <h1>Coleccion clasica de Marvel</h1>
+    <h1><?php echo TITULO?></h1>
     <section>
         <table>
             <tr>
@@ -34,81 +40,81 @@
             <tr>
                 <td>1</td>
                 <td><img src="https://brihet.com.ar/wp-content/uploads/2025/05/MCC01.jpg.webp" alt="comic 1"></td>
-                <td>El Asombroso Spiderman</td>
+                <td><?php echo $heroes[0] ?></td>
                 <td>¡Poder y responsabilidad!</td>
-                <td>$12.900</td>
+                <td><?php echo PRECIO;?></td>
                 <td><input type="checkbox" name="" id=""></td>
             </tr>
             <tr>
                 <td>2</td>
                 <td><img src="https://brihet.com.ar/wp-content/uploads/2025/05/C-C-MARVEL-02.jpg.webp" alt="comic 2"></td>
-                <td>Los 4 Fantasticos</td>
-                <td>¡Poder y responsabilidad!</td>
-                <td>$12.900</td>
+                <td><?php echo $heroes[1] ?></td>
+                <td>Prisioneros del Doctor Destino</td>
+                <td><?php echo PRECIO;?></td>
                 <td><input type="checkbox" name="" id=""></td>
             </tr>            
             <tr>
                 <th>3</th>
                 <td><img src="https://brihet.com.ar/wp-content/uploads/2025/06/C-C-MARVEL-03.jpg.webp" alt="comic 3"></td>
-                <td>Thor</td>
-                <td>¡Poder y responsabilidad!</td>
-                <td>$12.900</td>
+                <td><?php echo $heroes[2] ?></td>
+                <td>Será digno el…</td>
+                <td><?php echo PRECIO;?></td>
                 <td><input type="checkbox" name="" id=""></td>
             </tr>            
             <tr>
                 <th>4</th>
                 <td><img src="https://brihet.com.ar/wp-content/uploads/2025/06/C-C-MARVEL-04.jpg.webp" alt="comic 4"></td>
-                <td>Hulk</td>
-                <td>¡Poder y responsabilidad!</td>
-                <td>$12.900</td>
+                <td><?php echo $heroes[3] ?></td>
+                <td>El hombre o el monstruo</td>
+                <td><?php echo PRECIO;?></td>
                 <td><input type="checkbox" name="" id=""></td>
             </tr>            
             <tr>
                 <th>5</th>
                 <td><img src="https://brihet.com.ar/wp-content/uploads/2025/06/C-C-MARVEL-05.jpg.webp" alt="comic 5"></td>
-                <td>Los 4 Fantasticos</td>
-                <td>¡Poder y responsabilidad!</td>
-                <td>$12.900</td>
+                <td><?php echo $heroes[1] ?></td>
+                <td>El príncipe Submarino</td>
+                <td><?php echo PRECIO;?></td>
                 <td><input type="checkbox" name="" id=""></td>
             </tr>            
             <tr>
                 <th>6</th>
                 <td><img src="https://brihet.com.ar/wp-content/uploads/2025/07/C-C-MARVEL-06.jpg.webp" alt="comic 6"></td>
-                <td>Iron Man</td>
-                <td>¡Poder y responsabilidad!</td>
-                <td>$12.900</td>
+                <td><?php echo $heroes[4] ?></td>
+                <td>El vengador dorado</td>
+                <td><?php echo PRECIO;?></td>
                 <td><input type="checkbox" name="" id=""></td>
             </tr>            
             <tr>
                 <th>7</th>
                 <td><img src="https://brihet.com.ar/wp-content/uploads/2025/07/C-C-MARVEL-07.jpg.webp" alt="comic 7"></td>
-                <td>Los 4 Fantasticos</td>
-                <td>¡Poder y responsabilidad!</td>
-                <td>$12.900</td>
+                <td><?php echo $heroes[1] ?></td>
+                <td>Amenaza en la luna</td>
+                <td><?php echo PRECIO;?></td>
                 <td><input type="checkbox" name="" id=""></td>
             </tr>            
             <tr>
                 <th>8</th>
                 <td><img src="https://brihet.com.ar/wp-content/uploads/2025/07/C-C-MARVEL-08.jpg.webp" alt="comic 8"></td>
-                <td>Thor</td>
-                <td>¡Poder y responsabilidad!</td>
-                <td>$12.900</td>
+                <td><?php echo $heroes[2] ?></td>
+                <td>Cuentos de Asgard</td>
+                <td><?php echo PRECIO;?></td>
                 <td><input type="checkbox" name="" id=""></td>
             </tr>            
             <tr>
                 <th>9</th>
                 <td><img src="https://brihet.com.ar/wp-content/uploads/2025/07/C-C-MARVEL-09.jpg.webp" alt="comic 9"></td>
-                <td>Los 4 Fantasticos</td>
-                <td>¡Poder y responsabilidad!</td>
-                <td>$12.900</td>
+                <td><?php echo $heroes[1] ?></td>
+                <td>Un Skrull entre nosotros</td>
+                <td><?php echo PRECIO;?></td>
                 <td><input type="checkbox" name="" id=""></td>
             </tr>            
             <tr>
                 <th>10</th>
                 <td><img src="https://brihet.com.ar/wp-content/uploads/2025/07/C-C-MARVEL-10.jpg.webp" alt="comic 10"></td>
-                <td>El Asombroso Spiderman</td>
-                <td>¡Poder y responsabilidad!</td>
-                <td>$12.900</td>
+                <td><?php echo $heroes[0] ?></td>
+                <td>Todos contra la Araña</td>
+                <td><?php echo PRECIO;?></td>
                 <td><input type="checkbox" name="" id=""></td>
             </tr>            
         </table>
