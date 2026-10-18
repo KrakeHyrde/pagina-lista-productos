@@ -1,9 +1,25 @@
 <?php
  const PRECIO = "12900$";
  const TITULO = "Lista de Comics";
- $heroes = ["El Asombroso Spiderman","Los 4 Fantasticos","Thor","Hulk","Iron Man"];
+ $heroes = [
+    1 => "El Asombroso Spiderman",
+    2 => "Los 4 Fantasticos",
+    3 => "Thor",
+    4 => "Hulk",
+    5 => "Iron Man"];
+ $comicInfo = [
+    ["heroe" => 1, "titulo" =>"¡Poder y responsabilidad!", "imagen" => "https://brihet.com.ar/wp-content/uploads/2025/05/MCC01.jpg.webp" ],
+    ["heroe" => 2, "titulo" =>"Prisioneros del Doctor Destino", "imagen" => "https://brihet.com.ar/wp-content/uploads/2025/05/C-C-MARVEL-02.jpg.webp" ],
+    ["heroe" => 3, "titulo" =>"Será digno el…", "imagen" => "https://brihet.com.ar/wp-content/uploads/2025/06/C-C-MARVEL-03.jpg.webp" ],
+    ["heroe" => 4, "titulo" =>"El hombre o el monstruo", "imagen" => "https://brihet.com.ar/wp-content/uploads/2025/06/C-C-MARVEL-04.jpg.webp" ],
+    ["heroe" => 2, "titulo" =>"El príncipe Submarino", "imagen" => "https://brihet.com.ar/wp-content/uploads/2025/06/C-C-MARVEL-05.jpg.webp" ],
+    ["heroe" => 5, "titulo" =>"El vengador dorado", "imagen" => "https://brihet.com.ar/wp-content/uploads/2025/07/C-C-MARVEL-06.jpg.webp" ],
+    ["heroe" => 2, "titulo" =>"Amenaza en la luna", "imagen" => "https://brihet.com.ar/wp-content/uploads/2025/07/C-C-MARVEL-07.jpg.webp" ],
+    ["heroe" => 3, "titulo" =>"Cuentos de Asgard", "imagen" => "https://brihet.com.ar/wp-content/uploads/2025/07/C-C-MARVEL-08.jpg.webp" ],
+    ["heroe" => 2, "titulo" =>"Un Skrull entre nosotros", "imagen" => "https://brihet.com.ar/wp-content/uploads/2025/07/C-C-MARVEL-09.jpg.webp" ],
+    ["heroe" => 1, "titulo" =>"Todos contra la Araña", "imagen" => "https://brihet.com.ar/wp-content/uploads/2025/07/C-C-MARVEL-10.jpg.webp" ],
+ ];
  $comicVolume = 1;
-
 ?>
 
 <!DOCTYPE html>
@@ -38,86 +54,7 @@
                 <th>checkbox</th>
             </tr>
 
-            <tr>
-                <td><?php echo $comicVolume++; ?></td>
-                <td><img src="https://brihet.com.ar/wp-content/uploads/2025/05/MCC01.jpg.webp" alt="comic 1"></td>
-                <td><?php echo $heroes[0] ?></td>
-                <td>¡Poder y responsabilidad!</td>
-                <td><?php echo PRECIO;?></td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>
-            <tr>
-                <td><?php echo $comicVolume++; ?></td>
-                <td><img src="https://brihet.com.ar/wp-content/uploads/2025/05/C-C-MARVEL-02.jpg.webp" alt="comic 2"></td>
-                <td><?php echo $heroes[1] ?></td>
-                <td>Prisioneros del Doctor Destino</td>
-                <td><?php echo PRECIO;?></td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>            
-            <tr>
-                <th><?php echo $comicVolume++; ?></th>
-                <td><img src="https://brihet.com.ar/wp-content/uploads/2025/06/C-C-MARVEL-03.jpg.webp" alt="comic 3"></td>
-                <td><?php echo $heroes[2] ?></td>
-                <td>Será digno el…</td>
-                <td><?php echo PRECIO;?></td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>            
-            <tr>
-                <th><?php echo $comicVolume++; ?></th>
-                <td><img src="https://brihet.com.ar/wp-content/uploads/2025/06/C-C-MARVEL-04.jpg.webp" alt="comic 4"></td>
-                <td><?php echo $heroes[3] ?></td>
-                <td>El hombre o el monstruo</td>
-                <td><?php echo PRECIO;?></td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>            
-            <tr>
-                <th><?php echo $comicVolume++; ?></th>
-                <td><img src="https://brihet.com.ar/wp-content/uploads/2025/06/C-C-MARVEL-05.jpg.webp" alt="comic 5"></td>
-                <td><?php echo $heroes[1] ?></td>
-                <td>El príncipe Submarino</td>
-                <td><?php echo PRECIO;?></td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>            
-            <tr>
-                <th><?php echo $comicVolume++; ?></th>
-                <td><img src="https://brihet.com.ar/wp-content/uploads/2025/07/C-C-MARVEL-06.jpg.webp" alt="comic 6"></td>
-                <td><?php echo $heroes[4] ?></td>
-                <td>El vengador dorado</td>
-                <td><?php echo PRECIO;?></td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>            
-            <tr>
-                <th><?php echo $comicVolume++; ?></th>
-                <td><img src="https://brihet.com.ar/wp-content/uploads/2025/07/C-C-MARVEL-07.jpg.webp" alt="comic 7"></td>
-                <td><?php echo $heroes[1] ?></td>
-                <td>Amenaza en la luna</td>
-                <td><?php echo PRECIO;?></td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>            
-            <tr>
-                <th><?php echo $comicVolume++; ?></th>
-                <td><img src="https://brihet.com.ar/wp-content/uploads/2025/07/C-C-MARVEL-08.jpg.webp" alt="comic 8"></td>
-                <td><?php echo $heroes[2] ?></td>
-                <td>Cuentos de Asgard</td>
-                <td><?php echo PRECIO;?></td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>            
-            <tr>
-                <th><?php echo $comicVolume++; ?></th>
-                <td><img src="https://brihet.com.ar/wp-content/uploads/2025/07/C-C-MARVEL-09.jpg.webp" alt="comic 9"></td>
-                <td><?php echo $heroes[1] ?></td>
-                <td>Un Skrull entre nosotros</td>
-                <td><?php echo PRECIO;?></td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>            
-            <tr>
-                <th><?php echo $comicVolume++; ?></th>
-                <td><img src="https://brihet.com.ar/wp-content/uploads/2025/07/C-C-MARVEL-10.jpg.webp" alt="comic 10"></td>
-                <td><?php echo $heroes[0] ?></td>
-                <td>Todos contra la Araña</td>
-                <td><?php echo PRECIO;?></td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>            
+            
         </table>
     </section>
 </body>
