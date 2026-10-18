@@ -7,7 +7,7 @@
     3 => "Thor",
     4 => "Hulk",
     5 => "Iron Man"];
- $comicInfo = [
+ $comicsInfo = [
     ["heroe" => 1, "titulo" =>"¡Poder y responsabilidad!", "imagen" => "https://brihet.com.ar/wp-content/uploads/2025/05/MCC01.jpg.webp" ],
     ["heroe" => 2, "titulo" =>"Prisioneros del Doctor Destino", "imagen" => "https://brihet.com.ar/wp-content/uploads/2025/05/C-C-MARVEL-02.jpg.webp" ],
     ["heroe" => 3, "titulo" =>"Será digno el…", "imagen" => "https://brihet.com.ar/wp-content/uploads/2025/06/C-C-MARVEL-03.jpg.webp" ],
@@ -54,6 +54,16 @@
                 <th>checkbox</th>
             </tr>
 
+            <?php foreach ($comicsInfo as $comicInfo): ?>
+                <tr>
+                    <td><?php echo $comicVolume++ ?></td>
+                    <td><img src="<?php echo $comicInfo["imagen"]; ?>" alt="Comic Image"></td>
+                    <td><?php echo $heroes[$comicInfo["heroe"]]; ?></td>
+                    <td><?php echo $comicInfo["titulo"]; ?></td>
+                    <td><?php echo PRECIO; ?></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            <?php endforeach; ?>    
             
         </table>
     </section>
