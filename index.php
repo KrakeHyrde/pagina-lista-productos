@@ -25,6 +25,30 @@
     $comicVolume = 1;
 
     $heroeSeleccionado = $_GET["heroe"] ?? 0;
+
+    if ($_POST) {
+        $conexion = mysqli_connect(
+            "localhost",
+            "root",
+            "",
+            "catalogo_marvel"
+        );
+
+        if (!$conexion) {
+            die("Error de conexión: " . mysqli_connect_error());
+        }
+
+        $nombre = $_POST["nombre"];
+        $email = $_POST["email"];
+        $comic = $_POST["comic"];
+
+        $consulta = "INSERT INTO consultas (nombre, email, comic) VALUES ('$nombre', '$email', '$comic')";
+
+        $resultado = mysqli_query($conexion, $consulta);
+
+
+        mysqli_close($conexion);
+    }
 ?>
 
 <!DOCTYPE html>
@@ -84,5 +108,20 @@
             
         </table>
     </section>
+
+    <h2>Consultar por un cómic</h2>
+
+    <form method="POST">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Comic:</label>
+        <input type="text" name="comic" required>
+
+        <button type="submit">Enviar consulta</button>
+    </form>
 </body>
 </html>
